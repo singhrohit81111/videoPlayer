@@ -1,0 +1,82 @@
+.videoDetails {
+    video {
+        height: 83vh;
+    }
+
+    .arrows {
+        margin-bottom: 81%;
+    }
+}
+
+
+.videoCard {
+    background-color: grey;
+    font-size: 10px;
+    height: 59vh;
+    width: 26vw;
+    border-radius: 10px;
+
+    .personDetails {
+        margin-top: 30%;
+
+        .name {
+            font-size: 12px;
+            font-weight: 900;
+            color: white;
+        }
+
+        .position {
+            font-size: 7px;
+            font-weight: 800;
+            color: white;
+        }
+
+        .company {
+            color: red;
+        }
+    }
+}
+
+.active-slide {
+    font-size: 12px;
+    width: 17vw;
+    margin-right: 30px;
+
+    .videoHeader {
+        display: flex;
+        position: absolute;
+        color: white;
+        margin: 10px 0px 0px 64px;
+
+        .headerImage {
+            height: 29px;
+            border-radius: 50%;
+        }
+
+        .headerDetails {
+            font-size: 7px;
+            margin-left: 10px;
+            text-align: left;
+            .headerName {}
+
+            .headerName {}
+
+            .headerCompany {
+                color: red;
+            }
+        }
+    }
+
+    video {
+        height: 63vh;
+        width: 17vw;
+    }
+}
+
+.videoC {
+    width: 25vw;
+    margin-right: 30px;
+
+    h2 {}
+
+}
