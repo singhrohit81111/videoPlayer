@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
+import  { useEffect, useRef, useState } from 'react';
 import podcasts from '../../data.json';
 import '../Styles/style.scss';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { Swiper, SwiperSlide, useSwiper, SwiperRef } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -12,12 +11,9 @@ import { Pagination } from 'swiper/modules';
 
 
 export default function Videos() {
-    const videoRef = useRef<typeof Swiper | null>(null);
     const [playingSlide, setPlayingSlide] = useState(0);
     const videoData = useSelector((video: RootState) => video.songChange);
-    const swipeRef = useRef<SwiperRef['swiper'] | null>(null);
     const [swiperInstance, setSwiperInstance] = useState<SwiperRef['swiper']>();
-    const buttonHandler = useSwiper();
     useEffect(() => {
         if (swiperInstance) {
             swiperInstance.slideTo(videoData.index, 10);
