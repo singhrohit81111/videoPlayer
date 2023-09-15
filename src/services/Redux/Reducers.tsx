@@ -3,13 +3,14 @@ import songs from  '../../data.json';
 
 var songsLength = songs.length;
 const initialState = {
-    index: 0
+    index: 0,
+    isWatched:false
 };
 
 export const songChange = (state = initialState, action: any): any => {
     switch (action.type) {
         case "Add": {
-            return { index: action.payload.index }
+            return { index: action.payload.index ,isWatched:true}
         }
         case "increment": {
             if (state.index == 0) {

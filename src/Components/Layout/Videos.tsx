@@ -1,15 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
-import podcasts from '../data.json';
-import './Styles/style.scss';
+import podcasts from '../../data.json';
+import '../Styles/style.scss';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { Swiper, SwiperSlide, useSwiper, SwiperRef } from 'swiper/react';
-import { Mousewheel } from 'swiper/modules';
 
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import videos from '../data.json';
+import videos from '../../data.json';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
@@ -47,8 +46,6 @@ export default function Videos() {
                 slideActiveClass={'active-slide'}
                 className="mySwiper"
                 onSwiper={(swiper) => setSwiperInstance(swiper)}
-                modules={[Mousewheel]}
-                mousewheel
             >
                 {videos.map((video, index) => {
                     if (index === playingSlide) return <SwiperSlide style={{ width: "40vw" }} className='videoC' >
