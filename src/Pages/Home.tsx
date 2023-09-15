@@ -1,4 +1,4 @@
-import HomeData from "../Components/Layout/HomeData";
+import HomeData from "@components/Layout/HomeData";
 
 export default function Home() {
     return (
