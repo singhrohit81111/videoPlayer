@@ -1,7 +1,7 @@
-import  { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import podcasts from '../../data.json';
 import '../Styles/style.scss';
-import { Swiper, SwiperSlide, useSwiper, SwiperRef } from 'swiper/react';
+import { Swiper, SwiperSlide, SwiperRef } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import videos from '../../data.json';
@@ -34,19 +34,19 @@ export default function Videos() {
                     prevEl: '.swiper-button-prev',
                 }}
                 onSlideChange={(s) => setPlayingSlide(s.activeIndex)}
-                slideActiveClass={'active-slide'}
+                slideActiveClass={'active-video-slide'}
                 className="mySwiper"
                 onSwiper={(swiper) => setSwiperInstance(swiper)}
                 modules={[Pagination]}
             >
                 {videos.map((video, index) => {
-                    if (index === playingSlide) return <SwiperSlide style={{ width: "40vw" }} className='videoC'>
+                    if (index === playingSlide) return <SwiperSlide style={{ width: "40vw" }} className='activeVideoCard'>
                         <div className='videoHeader'>
-                            <img src={`${podcasts[index].image}`} className='headerImage' />
-                            <div className='headerDetails'>
-                                <div className='headerName'>{`${podcasts[index].name}`}</div>
-                                <div className='headerPosition'>{`${podcasts[index].position}`}</div>
-                                <div className='headerCompany'>{`${podcasts[index].company}`}</div>
+                            <img src={`${podcasts[index].image}`} className='activeVideoImage ' />
+                            <div className='activeVideoDetails'>
+                                <div className='activeVideoName'>{`${podcasts[index].name}`}</div>
+                                <div className='activeVideoPosition'>{`${podcasts[index].position}`}</div>
+                                <div className='activeVideoCompany'>{`${podcasts[index].company}`}</div>
                             </div>
                         </div>
                         <video src={`${podcasts[index].videoURL}`} autoPlay controls controlsList='nodownload' style={{ height: "51vh", width: "14vw" }} />

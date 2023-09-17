@@ -1,10 +1,7 @@
 import songs from '../../data.json';
 
-
-var songsLength = songs.length;
 const initialState = {
     index: 0,
-    isWatched: false
 };
 
 export const songChange = (state = initialState, action: any): any => {

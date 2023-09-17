@@ -1,6 +1,5 @@
-import React from 'react'
-import Home from '../Pages/Home';
-import Videos from '@/Components/Layout/Videos';
+import Home from '../pages/Home';
+import Videos from '@/components/layout/Videos';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export default function Routtes() {

@@ -7,6 +7,9 @@ import { Mousewheel } from 'swiper/modules';
 import { useNavigate } from 'react-router-dom';
 import { RootState } from "@/services/Redux/Store";
 
+interface video{
+    index:number,
+}
 export default function HomeData() {
     const videoIndex=useSelector((state:RootState)=>{return state.songChange});
     const dispatch=useDispatch();
@@ -24,7 +27,7 @@ export default function HomeData() {
         },
         mousewheelControl: true,
     };    
-    const handlePlay=(video:any)=>{
+    const handlePlay=(video:video)=>{
         dispatch(addSong(video));
         console.log(videoIndex);
         navigate("/videos")

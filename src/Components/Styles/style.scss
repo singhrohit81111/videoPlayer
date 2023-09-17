@@ -37,7 +37,7 @@
     }
 }
 
-.active-slide {
+.active-video-slide {
     font-size: 12px;
     width: 17vw;
     margin-right: 30px;
@@ -48,20 +48,20 @@
         color: white;
         margin: 10px 0px 0px 64px;
 
-        .headerImage {
+        .activeVideoImage {
             height: 29px;
             border-radius: 50%;
         }
 
-        .headerDetails {
+        .activeVideoDetails {
             font-size: 7px;
             margin-left: 10px;
             text-align: left;
-            .headerName {}
+            .activeVideoName {}
 
-            .headerName {}
+            .activeVideoName {}
 
-            .headerCompany {
+            .activeVideoCompany {
                 color: red;
             }
         }
@@ -73,7 +73,7 @@
     }
 }
 
-.videoC {
+.activeVideoCard {
     width: 25vw;
     margin-right: 30px;
 
