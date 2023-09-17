@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
-import podcasts from '../../data.json';
-import '../Styles/style.scss';
+import podcasts from '../data.json';
+import '@components/styles/style.scss';
 import { Swiper, SwiperSlide, SwiperRef } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import videos from '../../data.json';
+import videos from '../data.json';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/services/Redux/Store';
 import { Pagination } from 'swiper/modules';
 
 
-export default function Videos() {
+export default function VideoContent() {
     const [playingSlide, setPlayingSlide] = useState(0);
     const videoData = useSelector((video: RootState) => video.songChange);
     const [swiperInstance, setSwiperInstance] = useState<SwiperRef['swiper']>();

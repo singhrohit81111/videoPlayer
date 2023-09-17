@@ -1,5 +1,5 @@
+import VideoContent from '@/pages/VideoContent';
 import Home from '../pages/Home';
-import Videos from '@/components/layout/Videos';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export default function Routtes() {
@@ -8,7 +8,7 @@ export default function Routtes() {
             <Routes>
                 <Route path="/">
                     <Route index element={<Home />} />
-                    <Route path='/videos' element={<Videos />} />
+                    <Route path='/videos' element={<VideoContent />} />
                 </Route>
             </Routes>
         </BrowserRouter>

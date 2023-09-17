@@ -1,9 +1,9 @@
-import HomeData from "@/components/layout/HomeData";
+import HomeContent from "@/components/layout/HomeContent";
 
 export default function Home() {
     return (
         <div>
-            <HomeData/>
+            <HomeContent/>
         </div>
     )
 }
