@@ -49,7 +49,7 @@
         display: flex;
         position: absolute;
         color: white;
-        margin: 22px 0px 0px 64px;
+        margin: 23px 0px 0px 111px;
 
         .activeVideoImage {
             height: 29px;
@@ -134,7 +134,8 @@
                 display: flex;
                 position: absolute;
                 color: white;
-                margin: 0px;
+                height: 19px;
+                margin: 56px 0px 0px 13px;
             }
         }
 
@@ -173,7 +174,7 @@
 
     .active-video-slide {
         .videoHeader {
-            margin: 0;
+            margin: 32px 0px 0px 34px;
         }
 
         video{

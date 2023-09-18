@@ -1,4 +1,3 @@
-import songs from '../../data.json';
 
 const initialState = {
     index: 0,

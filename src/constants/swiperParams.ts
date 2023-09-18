@@ -35,7 +35,7 @@ export const HOME_SWIPER_PARAMS = {
 }
 */
 export const VIDEO_CONTENT_PARAMS = {
-    slidesPerView: 4,
+    slidesPerView: 3,
     centeredSlides: true,
     spaceBetween: 30,
     grabCursor: true,
