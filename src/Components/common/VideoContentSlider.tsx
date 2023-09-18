@@ -1,4 +1,4 @@
-import { videoData } from "@/dataTypes/interface";
+import { videoData } from '../../dataTypes/interface';
 import { useEffect, useState } from 'react';
 import podcasts from '../../data.json';
 import '@components/styles/style.scss';
@@ -6,8 +6,8 @@ import { Swiper, SwiperSlide, SwiperRef } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { useSelector } from 'react-redux';
-import { RootState } from '@/services/Redux/Store';
-import { VIDEO_CONTENT_PARAMS } from '@/constants/swiperParams';
+import { RootState } from '@services/Redux/Store';
+import { VIDEO_CONTENT_PARAMS } from '../../constants/swiperParams';
 
 interface videoProps {
     videos: videoData[];

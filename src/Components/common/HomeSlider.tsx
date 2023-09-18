@@ -1,12 +1,12 @@
-import { videoData } from "@/dataTypes/interface";
+import { videoData } from "../../dataTypes/interface";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Mousewheel } from 'swiper/modules';
 import { useDispatch, useSelector } from 'react-redux';
 import { addSong } from '@services/Redux/Actions';
 import { useNavigate } from 'react-router-dom';
-import { RootState } from "@/services/Redux/Store";
-import { HOME_SWIPER_PARAMS } from "@/constants/swiperParams";
+import { RootState } from "@services/Redux/Store";
+import { HOME_SWIPER_PARAMS } from "../../constants/swiperParams";
 
 interface videoProps {
     persons: videoData[];
