@@ -1,0 +1,227 @@
+.videoDetails {
+    margin-top: 11%;
+
+    video {
+        height: 83vh;
+    }
+
+    .arrows {
+        margin-bottom: 81%;
+    }
+}
+
+
+.videoCard {
+    background-color: grey;
+    font-size: 10px;
+    height: 59vh;
+    width: 26vw;
+    border-radius: 10px;
+
+    .personDetails {
+        margin-top: 30%;
+
+        .name {
+            font-size: 22px;
+            font-weight: 900;
+            color: white;
+        }
+
+        .position {
+            font-size: 12px;
+            font-weight: 800;
+            color: white;
+        }
+
+        .company {
+            font-size: 15px;
+            color: red;
+        }
+    }
+}
+
+.active-video-slide {
+    font-size: 12px;
+    width: 17vw;
+    margin-right: 30px;
+
+    .videoHeader {
+        display: flex;
+        position: absolute;
+        color: white;
+        margin: 23px 0px 0px 111px;
+
+        .activeVideoImage {
+            height: 29px;
+            border-radius: 50%;
+        }
+
+        .activeVideoDetails {
+            font-size: 7px;
+            margin-left: 10px;
+            text-align: left;
+
+            .activeVideoName {
+                font-size: 9px;
+            }
+
+            .activeVideoName {
+                font-size: 10px;
+            }
+
+            .activeVideoCompany {
+                color: red;
+            }
+        }
+    }
+
+    video {
+        height: 51vh;
+        width: 14vw;
+    }
+}
+
+.activeVideoCard {
+    width: 25vw;
+    margin-right: 30px;
+
+    h2 {}
+
+}
+
+.homeHeader {
+    font-size: 57px;
+    margin-bottom: 67px;
+    font-weight: 900;
+    margin-top: 80px;
+}
+
+@media screen and (max-width:486px) {
+
+
+
+    .mySwiper {
+
+        .slide {
+            width: 40px;
+            margin-right: 11px;
+
+            .slideImage {
+                img {
+                    border-radius: 50%;
+                    border: 5px solid orange;
+                    height: 34px;
+                }
+            }
+
+            .personInfo {
+                .personInfoName {}
+
+                .personInfoPosition {}
+
+                .personInfoCompany {}
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .mySwiper {
+
+
+        .active-video-slide {
+            .videoHeader {
+                display: flex;
+                position: absolute;
+                color: white;
+                height: 19px;
+                margin: 56px 0px 0px 13px;
+            }
+        }
+
+        .videoCard {
+            width: 113px;
+            margin-right: 30px;
+            max-height: 40vh;
+
+            .personImg {
+                img {
+                    border-radius: 50%;
+                    margin-top: 60px;
+                    height: 48px;
+                }
+            }
+
+            .personDetails {
+                .name {
+                    font-size: 15px;
+                }
+
+                .position {
+                    font-size: 9px;
+                }
+
+                .company {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .active-video-slide {
+        .videoHeader {
+            margin: 32px 0px 0px 34px;
+        }
+
+        video{
+            height: 53vh;
+            width: 19vw;
+        }
+    }
+
+    .slideImage {
+        img {
+            height: 64px;
+            border-radius: 50%;
+            border: 5px solid orange;
+        }
+    }
+
+    .videoCard {
+        width: 113px;
+        margin-right: 30px;
+        max-height: 40vh;
+
+        .personImg {
+            img {
+                border-radius: 50%;
+                margin-top: 60px;
+                height: 11vh;
+            }
+        }
+
+        .personDetails {
+            .name {
+                font-size: 15px;
+            }
+
+            .position {
+                font-size: 9px;
+            }
+
+            .company {
+                font-size: 8px;
+            }
+        }
+    }
+
+}
+
+
+.swiper-pagination-bullet {
+    background: white !important;
+}
