@@ -42,7 +42,7 @@ export const VideoContentSlider: React.FC<videoProps> = ({ videos }) => {
                             <div className='activeVideoCompany'>{`${podcasts[index].company}`}</div>
                         </div>
                     </div>
-                    <video src={`${podcasts[index].videoURL}`} autoPlay controls controlsList='nodownload' style={{ height: "51vh", width: "14vw" }} />
+                    <video src={`${podcasts[index].videoURL}`} autoPlay controls controlsList='nodownload'  className="activeVideo"/>
                 </SwiperSlide>
                 return <SwiperSlide style={{ width: "16vw" }} className='videoCard'>
                     <div className="personImg"><img src={video.image} style={{ borderRadius: "50%", marginTop: "60px" }} /></div>
