@@ -25,6 +25,8 @@ export const HomeSlider: React.FC<videoProps> = ({ persons }) => {
         navigate("/videos")
     }
 
+    
+
     return (
         <Swiper watchSlidesProgress={true} slidesPerView={6} mousewheel className="mySwiper" {...HOME_SWIPER_PARAMS} modules={[Mousewheel]}>
             {persons.map(person => {
